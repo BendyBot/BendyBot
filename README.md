@@ -1,5 +1,5 @@
 <p align="center">
-<a title="memes" href=""><img src="https://cdn.discordapp.com/attachments/315392837594120192/344875876909056010/image.png"></a>
+<a title="memes" href=""><img src="https://cdn.discordapp.com/attachments/305253152297320452/344946308265541632/image.jpg"></a>
 </p>
 <p align="center">
   <a title="Version" href=""><img src="https://img.shields.io/badge/node.js-8.2.1-brightgreen.svg"></a>
