@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'MzM4MjQ2OTI0Mjc4ODI0OTcw.DFdPjg.b_5ewe09xr35QbIUKSMeccbCXTU';
+const token = '';
 const prefix = "^"
 bot.on('ready', () => {
   console.log('BendyBot Ready');
