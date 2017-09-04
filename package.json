@@ -1,0 +1,11 @@
+{
+  "name": "BendyBot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bot.js",
+  "author": "Saad meliti",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  }
+}
