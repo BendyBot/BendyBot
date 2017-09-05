@@ -52,6 +52,6 @@ message.channel.sendMessage('`chapter three is coming out soon:` tell bendy that
 message.channel.sendMessage('`what is my avatar bendy?:` ask bendy what is your discord avatar')
 message.channel.sendMessage('`give me an inky rating:` ask bendy to rate you on a scale of 1-100')
 message.channel.sendMessage('`when is chapter 3 coming:` ask bendy when chapter three is coming out')
-message.channel.sendMessage('if there are any problems or suggestions dm @RICK SANCHEZ  or @Teller Of Fortune#0892')
+message.channel.sendMessage('if there are any problems or suggestions dm <@271556689289805824> or <@313165926432505857>')
   }
 });
