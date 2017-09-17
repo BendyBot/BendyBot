@@ -1,9 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'GOAWAYNOTOKENHERELOL';
+const token = 'NONOFYOURBUISNESS';
 const prefix = "^"
 bot.on('ready', () => {
   console.log('BendyBot Ready');
+  bot.user.setPresence({ game: { name: '^help', type: 0 } });
+  bot.user.setStatus('online')
 });
 bot.on("messsage", async message => {
   if(message.author.bot) return; {
@@ -52,17 +54,24 @@ const embed = new Discord.RichEmbed()
 .setFooter('thats all the commands for now', 'https://cdn.discordapp.com/avatars/338246924278824970/638f5e3845bb7a166552b74c95c6cc08.png?size=2048')
 .setTimestamp()
 .setURL('https://github.com/BendyBot/BendyBot')
-.addField('<:Bendy:335369477921439756> Commands <:Bendy:335369477921439756>', 'Can I be mod, Bendy?,  chapter three is coming out soon,  what is my avatar bendy?,  give me an inky rating,  give me an inky rating')
+.addField('<:Bendy:335369477921439756> Commands <:Bendy:335369477921439756>', 'Can I be mod, Bendy?,  chapter three is coming out soon,  what is my avatar bendy?,  give me an inky rating,  give me an inky rating,  ^roll')
 .addField('problems or suggestions?', 'if there are any problems or suggestions dm RICK SANCHEZ or Teller of fortune');
 bot.on('message', message => {
 if (message.content === prefix + 'help') {
 message.react("335369477921439756")
-message.channel.sendMessage({embed})
+message.channel.sendMessage("sounds like you need help, Coming right Away <:Bendy:335369477921439756>")
+message.author.sendMessage({embed})
   }
 });
 bot.on('message', message => {
 if (message.content === '<@338246924278824970>') {
-message.react("337491354286292992")
-message.channel.sendMessage("what do you want? 😠")
+message.react("335369477921439756")
   }
 });
+bot.on('message', message => {
+  if (message.content === prefix + 'roll') {
+message.react("🎲")
+message.channel.sendMessage('🎲 you rolled a ' + Math.floor(Math.random() * 6));
+  }
+});
+
